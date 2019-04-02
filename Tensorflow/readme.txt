@@ -10,8 +10,7 @@ This Folder is make up of :
   
   the tuned InceptionV3_model,download of Tensorflow website.
 
-3.pycharm
-
+3.python
   the python code,include of how to feed your own picture to model,how to retrain the tuned model,and some problem you maybe encounter.
 
 4.CKPT
