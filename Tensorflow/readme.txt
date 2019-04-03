@@ -17,3 +17,20 @@ This Folder is make up of :
 
   the CKPT file after retrain.
 
+-----------------------------------------------------------------------------------------------------------------------------------
+
+1:
+  be careful about your memory.you should free the tensor after load tfrecord when your data is too large.
+
+2:
+  Tensorflow is a framework that the tensor and calculate are separated.
+  So maybe you will get some strange bug when you write your own code,good luck :)
+  
+3.
+  use tf.get_tensor_by_name to get the tensor you wanted.
+  use tf.get_collection(tf.GraphKeys().trainable_variables) to check what tensor are not frozen.
+
+4.
+  RMSPropOptimizer define some dropout variables in graph,and you need custom the operation if you want to convert your model
+  to tf.lite.
+  so,remove it before you get your frozen graph.
