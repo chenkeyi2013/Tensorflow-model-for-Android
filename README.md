@@ -74,7 +74,7 @@ The mobilenet model:
 
 	build a simple FC layer by you own:
 		
-		I tryed a serveral simple structure and write result in /Tensorflow/log
+		I tried a serveral simple structure and write result in /Tensorflow/log
 		there is a overfitting problem because my data is not good enough,so try feed better data or change another node
 		before 'MobilenetV1/Logits/Dropout_1b/Identity:0'.
 		
