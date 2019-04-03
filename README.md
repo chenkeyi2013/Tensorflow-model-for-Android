@@ -11,7 +11,10 @@ Consider our situation:
 		A few data photograph,maybe youself or your friend.
 	Build your own nerual network or choose a tuned model and retrain it?
 		A tuned model is a better choice I think.
-		1.I don't read enough paper about the conv nerual network when I build these code,have no idea about what structures or parameters are useful intuitively.
+		
+		1.I don't read enough paper about the conv nerual network when I build these
+		code,have no idea about what structures or parameters are useful intuitively.
+		
 		2.There are no enough data to feed.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -26,11 +29,13 @@ The mobilenet model:
 
 	This maybe a solution for the pb file cost too much time on Andriod after I get my trained InceptionV3 model.
 
-	The Tensorflow Lite website shows that a InceptionV3 quantized Lite file will cost 600ms in Andriod,and Top1 accuracy is about 79%,
+	The Tensorflow Lite website shows that a InceptionV3 quantized Lite file will cost 600ms in Andriod,and Top1 accuracy is
+	about 79%,
 	but a mobilenet pb file cost 100ms in Andriod and Top1 accuracy is about 71%.
 	
 	--------------------------------------------------------------------------------------------------------------------------------------------
-	Data----->load to mermory----->Load the model structure----->Find a node with tensorboard----->build a simple FC layer by you own----->train
+	Data----->load to mermory----->Load the model structure----->Find a node with tensorboard--
+	--->build a simple FC layer by you own----->train
 
 
 	Data:
@@ -70,7 +75,9 @@ The mobilenet model:
 	build a simple FC layer by you own:
 		
 		I tryed a serveral simple structure and write result in /Tensorflow/log
-		there is a overfitting problem because my data is not good enough,so try feed better data or change another node before 'MobilenetV1/Logits/Dropout_1b/Identity:0'.
+		there is a overfitting problem because my data is not good enough,so try feed better data or change another node
+		before 'MobilenetV1/Logits/Dropout_1b/Identity:0'.
+		
 		I will update the result as soon as I solve this problem.
 
 	train:
