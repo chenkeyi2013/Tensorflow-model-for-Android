@@ -39,7 +39,7 @@ The mobilenet model:
 
 
 	Data:
-		prepare your own pictures and change it to Tfrecords with /Tensorflow/python/item/data_to_tfrecord.py.
+		prepare your own pictures and convert it to Tfrecords with /Tensorflow/python/item/data_to_tfrecord.py.
 		example:
 			your three types picture:	/home/picture/0,/home/picture/1,/home/picture/2
 			change the parameter in py:	/home/picture/
@@ -69,7 +69,7 @@ The mobilenet model:
 		writer = tf.summary.FileWriter(TENSORBOARD_LOG, g1)
 		writer.close()
 		-------------------------------------------------------
-		and command 'tensorboard --logdir=log to overview the graph with tensorboard.
+		and command 'tensorboard --logdir=log' to overview the graph with tensorboard.
 		you should check the model paper and find the FC layer or choose a node you want to begin.
 
 	build a simple FC layer by you own:
